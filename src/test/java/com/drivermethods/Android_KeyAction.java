@@ -7,11 +7,16 @@ import java.util.concurrent.TimeUnit;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
 import io.appium.java_client.android.AndroidDriver;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
 
 public class Android_KeyAction {
 
 	public static void main(String[] args) throws MalformedURLException, InterruptedException   {
 
+		
+		AppiumDriverLocalService server = AppiumDriverLocalService.buildDefaultService();
+		server.start();
+		
 		DesiredCapabilities dc = new DesiredCapabilities();
 		// Common DC (Android or IOS)
 		dc.setCapability("deviceName", "Redmi");		
@@ -67,6 +72,9 @@ public class Android_KeyAction {
 		//		Thread.sleep(2000);
 		//
 		//		driver.pressKeyCode(AndroidKeyCode.KEYCODE_BRIGHTNESS_DOWN);
+		
+		
+		server.stop();
 
 	}
 
