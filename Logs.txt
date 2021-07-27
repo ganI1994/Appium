@@ -1,0 +1,63 @@
+2021-07-27 11:22:10:699 [Appium] Welcome to Appium v1.18.1
+2021-07-27 11:22:10:703 [Appium] Non-default server args:
+2021-07-27 11:22:10:709 [Appium]   sessionOverride: true
+2021-07-27 11:22:10:710 [Appium]   logFile: D:\OCT2020\AppiumSDET17\..\AppiumSDET17\Logs.txt
+2021-07-27 11:22:10:878 [Appium] Appium REST http interface listener started on 0.0.0.0:4723
+2021-07-27 11:22:11:288 [HTTP] --> GET /wd/hub/status
+2021-07-27 11:22:11:293 [HTTP] {}
+2021-07-27 11:22:11:298 [GENERIC] Calling AppiumDriver.getStatus() with args: []
+2021-07-27 11:22:11:302 [GENERIC] Responding to client with driver.getStatus() result: {"build":{"version":"1.18.1"}}
+2021-07-27 11:22:11:325 [HTTP] <-- GET /wd/hub/status 200 27 ms - 68
+2021-07-27 11:22:11:326 [HTTP] 
+2021-07-27 11:22:13:666 [HTTP] --> POST /wd/hub/session
+2021-07-27 11:22:13:667 [HTTP] {"desiredCapabilities":{"appPackage":"com.davemorrissey.labs.subscaleview.sample","appActivity":".MainActivity","app":"Path of Application from your system","platformVersion":"7","automationName":"appium","platformName":"Android","deviceName":"Redmi","UDID":"d6c768cf9804"}}
+2021-07-27 11:22:13:668 [MJSONWP] Calling AppiumDriver.createSession() with args: [{"appPackage":"com.davemorrissey.labs.subscaleview.sample","appActivity":".MainActivity","app":"Path of Application from your system","platformVersion":"7","automationName":"appium","platformName":"Android","deviceName":"Redmi","UDID":"d6c768cf9804"},null,null]
+2021-07-27 11:22:13:670 [BaseDriver] Event 'newSessionRequested' logged at 1627384933670 (16:52:13 GMT+0530 (India Standard Time))
+2021-07-27 11:22:13:679 [Appium] 
+2021-07-27 11:22:13:681 [Appium] ======================================================================
+2021-07-27 11:22:13:682 [Appium]   DEPRECATION WARNING:
+2021-07-27 11:22:13:683 [Appium] 
+2021-07-27 11:22:13:684 [Appium]   The 'automationName' capability was not provided in the desired 
+2021-07-27 11:22:13:685 [Appium]   capabilities for this Android session
+2021-07-27 11:22:13:686 [Appium] 
+2021-07-27 11:22:13:686 [Appium]   Setting 'automationName=UiAutomator2' by default and using the 
+2021-07-27 11:22:13:687 [Appium]   UiAutomator2 Driver
+2021-07-27 11:22:13:688 [Appium] 
+2021-07-27 11:22:13:689 [Appium]   The next major version of Appium (2.x) will **require** the 
+2021-07-27 11:22:13:690 [Appium]   'automationName' capability to be set for all sessions on all 
+2021-07-27 11:22:13:691 [Appium]   platforms
+2021-07-27 11:22:13:692 [Appium] 
+2021-07-27 11:22:13:693 [Appium]   In previous versions (Appium <= 1.13.x), the default was 
+2021-07-27 11:22:13:694 [Appium]   'automationName=UiAutomator1'
+2021-07-27 11:22:13:696 [Appium] 
+2021-07-27 11:22:13:697 [Appium]   If you wish to use that automation instead of UiAutomator2, please 
+2021-07-27 11:22:13:698 [Appium]   add 'automationName=UiAutomator1' to your desired capabilities
+2021-07-27 11:22:13:700 [Appium] 
+2021-07-27 11:22:13:701 [Appium]   For more information about drivers, please visit 
+2021-07-27 11:22:13:702 [Appium]   http://appium.io/docs/en/about-appium/intro/ and explore the 
+2021-07-27 11:22:13:702 [Appium]   'Drivers' menu
+2021-07-27 11:22:13:702 [Appium] 
+2021-07-27 11:22:13:703 [Appium] ======================================================================
+2021-07-27 11:22:13:704 [Appium] 
+2021-07-27 11:22:21:800 [Appium] Appium v1.18.1 creating new AndroidUiautomator2Driver (v1.56.1) session
+2021-07-27 11:22:21:801 [Appium] There are no active sessions for cleanup
+2021-07-27 11:22:21:808 [BaseDriver] Creating session with MJSONWP desired capabilities: {
+2021-07-27 11:22:21:809 [BaseDriver]   "appPackage": "com.davemorrissey.labs.subscaleview.sample",
+2021-07-27 11:22:21:811 [BaseDriver]   "appActivity": ".MainActivity",
+2021-07-27 11:22:21:812 [BaseDriver]   "app": "Path of Application from your system",
+2021-07-27 11:22:21:812 [BaseDriver]   "platformVersion": "7",
+2021-07-27 11:22:21:813 [BaseDriver]   "automationName": "appium",
+2021-07-27 11:22:21:813 [BaseDriver]   "platformName": "Android",
+2021-07-27 11:22:21:814 [BaseDriver]   "deviceName": "Redmi",
+2021-07-27 11:22:21:817 [BaseDriver]   "UDID": "d6c768cf9804"
+2021-07-27 11:22:21:817 [BaseDriver] }
+2021-07-27 11:22:21:836 [BaseDriver] The following capabilities were provided, but are not recognized by Appium:
+2021-07-27 11:22:21:837 [BaseDriver]   UDID
+2021-07-27 11:22:21:840 [BaseDriver] Session created with session id: 1fd7bb3f-23f0-4e19-b90e-50bc76b7f3b9
+2021-07-27 11:22:21:869 [UiAutomator2] Deleting UiAutomator2 session
+2021-07-27 11:22:21:874 [BaseDriver] Event 'newSessionStarted' logged at 1627384941874 (16:52:21 GMT+0530 (India Standard Time))
+2021-07-27 11:22:22:084 [MJSONWP] Encountered internal error running command: Error: The application at 'Path of Application from your system' does not exist or is not accessible
+2021-07-27 11:22:22:084 [MJSONWP]     at C:\Users\AMAR-G\AppData\Roaming\npm\node_modules\appium\node_modules\appium-base-driver\lib\basedriver\helpers.js:235:13
+2021-07-27 11:22:22:088 [MJSONWP] Destroying socket connection
+2021-07-27 11:22:22:090 [HTTP] <-- POST /wd/hub/session 500 8422 ms - 230
+2021-07-27 11:22:22:091 [HTTP] 

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite guice-stage="DEVELOPMENT" name="Failed suite [Suite]" parallel="tests">
+  <test thread-count="5" name="Test2(failed)" parallel="tests">
+    <parameter name="port" value="4724"/>
+    <parameter name="platformVersion" value="8.1.0"/>
+    <parameter name="deviceName" value="Android Emulator"/>
+    <parameter name="UDID" value="emulator-5554"/>
+    <classes>
+      <class name="com.webapp.ParallelExecution">
+        <methods>
+          <include name="parallelExecution" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.webapp.ParallelExecution -->
+    </classes>
+  </test> <!-- Test2(failed) -->
+  <test thread-count="5" name="Test1(failed)" parallel="tests">
+    <parameter name="port" value="4723"/>
+    <parameter name="platformVersion" value="7"/>
+    <parameter name="deviceName" value="Redmi"/>
+    <parameter name="UDID" value="d6c768cf9804"/>
+    <classes>
+      <class name="com.webapp.ParallelExecution">
+        <methods>
+          <include name="parallelExecution" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- com.webapp.ParallelExecution -->
+    </classes>
+  </test> <!-- Test1(failed) -->
+</suite> <!-- Failed suite [Suite] -->
