@@ -1,23 +1,31 @@
 package pac.practice;
 
+import java.io.File;
 import java.io.IOException;
-import java.net.MalformedURLException;
 import java.net.ServerSocket;
 import java.net.URL;
 import java.util.List;
 import java.util.concurrent.TimeUnit;
 
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.remote.DesiredCapabilities;
 
-import io.appium.java_client.MobileElement;
 import io.appium.java_client.android.AndroidDriver;
-import io.appium.java_client.android.AndroidElement;
+import io.appium.java_client.service.local.AppiumDriverLocalService;
+import io.appium.java_client.service.local.AppiumServiceBuilder;
+import io.appium.java_client.service.local.flags.GeneralServerFlag;
 
 public class ApiDemos_App {
 
 	public static void main(String[] args) throws Exception {
+		
+		AppiumDriverLocalService.buildService(new AppiumServiceBuilder()
+				.usingPort(4723)
+				.withArgument(GeneralServerFlag.SESSION_OVERRIDE)
+				.withLogFile(new File("./AppiumSDET17/Appiumlogs.txt")));
+		
+		
+		
 		DesiredCapabilities dc = new DesiredCapabilities();
 		// Common DC (Android or IOS)
 		dc.setCapability("deviceName", "Android Emulator");		

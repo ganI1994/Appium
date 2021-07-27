@@ -73,7 +73,7 @@ public class Android_KeyAction {
 		//
 		//		driver.pressKeyCode(AndroidKeyCode.KEYCODE_BRIGHTNESS_DOWN);
 		
-		
+		driver.closeApp();
 		server.stop();
 
 	}
